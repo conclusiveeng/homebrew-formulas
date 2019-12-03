@@ -14,6 +14,8 @@ class Devclient < Formula
 	depends_on "telnet"
 
 	def install
-		system "mkdir -pv build && cd build && cmake .. && make"
+		system "mkdir -pv build"
+		system "cd build && cmake .."
+		system "cd build && make"
 	end
 end
