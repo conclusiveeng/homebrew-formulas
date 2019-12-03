@@ -1,7 +1,7 @@
 class Devclient < Formula
 	desc "Conclusive Development Cable Client"
 	homepage "https://github.com/conclusiveeng/devclient"
-	head "https://github.com/conclusiveeng/devclient.git", tag => "0.1.2"
+	head "https://github.com/conclusiveeng/devclient.git", :tag => "0.1.2"
 
 	depends_on "cmake"
 	depends_on "libtool"
