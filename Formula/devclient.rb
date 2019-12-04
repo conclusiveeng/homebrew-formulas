@@ -18,6 +18,9 @@ class Devclient < Formula
 		system "mkdir -pv build"
 		system "cd build && cmake .."
 		system "cd build && make"
-		system "cd build && make install"
+
+		prefix.install "build/scripts"
+		prefix.install "build/tools"
+		bin.install "build/devclient"
 	end
 end
