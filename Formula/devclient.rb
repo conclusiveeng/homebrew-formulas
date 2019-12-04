@@ -1,7 +1,7 @@
 class Devclient < Formula
 	desc "Conclusive Development Cable Client"
 	homepage "https://github.com/conclusiveeng/devclient"
-	url "https://github.com/conclusiveeng/devclient.git", :branch => "dev"
+	head "https://github.com/conclusiveeng/devclient.git", :branch => "dev"
 
 	depends_on "cmake"
 	depends_on "libtool"
@@ -12,6 +12,7 @@ class Devclient < Formula
 	depends_on "libftdi"
 	depends_on "gtkmm3"
 	depends_on "telnet"
+	depends_on "pkg-config"
 
 	def install
 		system "mkdir -pv build"
