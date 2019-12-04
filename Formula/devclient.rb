@@ -12,7 +12,6 @@ class Devclient < Formula
 	depends_on "libftdi"
 	depends_on "gtkmm3"
 	depends_on "telnet"
-	depends_on "pkg-config"
 
 	def install
 		system "mkdir -pv build"
