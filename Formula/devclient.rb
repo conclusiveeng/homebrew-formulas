@@ -1,7 +1,6 @@
 class Devclient < Formula
 	desc "Conclusive Development Cable Client"
 	homepage "https://github.com/conclusiveeng/devclient"
-	head "https://github.com/conclusiveeng/devclient.git", :branch => "dev"
 	url "https://github.com/conclusiveeng/devclient.git", :branch => "dev"
 
 	depends_on "cmake"
