@@ -13,6 +13,7 @@ class Devclient < Formula
 	depends_on "gtkmm3"
 	depends_on "telnet"
 	depends_on "pkg-config"
+	depends_on "boost"
 
 	def install
 		system "mkdir -pv build"
