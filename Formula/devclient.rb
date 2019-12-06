@@ -17,7 +17,9 @@ class Devclient < Formula
 
 	def install
 		system "mkdir -pv build"
+
 		system "cd build && cmake .."
+		system "cd build && git apply ../../dtc-fix-install.patch"
 		system "cd build && make"
 
 		prefix.install "build/scripts"
