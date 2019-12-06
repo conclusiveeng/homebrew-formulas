@@ -19,7 +19,7 @@ class Devclient < Formula
 		system "mkdir -pv build"
 
 		system "cd build && cmake .."
-		system "cd build/dtc && git apply ../../dtc-fix-install.patch"
+		system "cd build/dtc && git apply ../../dtc-install-fix.patch"
 		system "cd build && make"
 
 		prefix.install "build/scripts"
